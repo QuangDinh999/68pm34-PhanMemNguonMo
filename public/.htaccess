@@ -5,4 +5,4 @@ option -Indexes
 RewriteCond %(REQUEST_FILENAME) l-f
 RewriteCond %(REQUEST_FILENAME) l-d
 # Dieu Huong tat ca cac yeu cau toi index.php
-RewriteRule ^(.*)$ index.php?url=$
+RewriteRule ^(.`) index.php?url=$1

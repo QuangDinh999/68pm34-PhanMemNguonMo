@@ -1,7 +1,7 @@
 <?php
 class SinhvienController{
     public function index(){
-        echo "index method from SinhvienController";
+        require_once '../app/views/sinhvien/index.php';
     }
 
     public function show($id){

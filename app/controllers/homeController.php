@@ -1,7 +1,7 @@
 <?php
 class HomeController{
     public function index(){
-        echo "index method from HomeController";
+        require_once '../app/views/home/index.php';
     }
 
     public function about(){

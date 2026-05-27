@@ -6,18 +6,28 @@
     <title>Danh sách sinh viên</title>
 </head>
 <body>
-    <!-- <?php
-    session_start();
-    if(isset($_SESSION['username'])){
-        echo "Xin chào(SS), " . $_SESSION['username'] . "! <a href='?url=auth/logout'>Đăng xuất</a>";
-    } elseif(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
-        $_SESSION['username'] = $_COOKIE['username'];
-        echo "Xin chào(CK), " . $_SESSION['username'] . "! <a href='?url=auth/logout'>Đăng xuất</a>";
-    } else {
-        header('Location: ?url=auth/login');
-        exit();
-    }
-    ?>   -->
     <h1>Danh sách sinh viên</h1>
+    <table>
+    <tr>
+        <th> STT </th>
+        <th> Mã sinh viên </th>
+        <th> Họ tên </th>
+        <th> Giới tính </th>
+        <th> Ngày sinh </th>
+        <th> Địa chỉ </th>
+        <th> Lớp </th>
+    </tr>
+    <?php foreach ($sinhviens as $index => $sinhvien): ?>
+        <tr>
+            <td> <?php echo $index + 1; ?> </td>
+            <td> <?php echo $sinhvien['ma_sv']; ?> </td>
+            <td> <?php echo $sinhvien['ho_ten']; ?> </td>
+            <td> <?php echo $sinhvien['gioi_tinh']; ?> </td>
+            <td> <?php echo $sinhvien['ngay_sinh']; ?> </td>
+            <td> <?php echo $sinhvien['dia_chi']; ?> </td>
+            <td> <?php echo $sinhvien['lop']; ?> </td>
+        </tr>
+    <?php endforeach; ?>
+    </table>
 </body>
 </html> 

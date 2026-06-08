@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .header {
-            width: 100%;
-            height: 80px;
-            background-color: #e92727;
-        }
-    </style>
-</head>
-<body>
-    h2>Header Content</h2>
-</body>
-</html>
+<header class="header" style="background:#e92727;color:#fff;padding:12px 20px;">
+    <h2 style="margin:0;">Header Content</h2>
+</header>

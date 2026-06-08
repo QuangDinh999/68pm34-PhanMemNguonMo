@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    style>
-        .footer {
-            width: 100%;
-            height: 60px;
-            background-color: #394e42;
-            position: fixed;
-            bottom: 0;
-        }
-     </style>
-</head>
-<body>
-    h2>Footer Content</h2>
-</body>
-</html>
+<footer class="footer" style="background:#394e42;color:#fff;padding:12px 20px; margin-top: 20px;">
+    <p style="margin:0;">Footer Content</p>
+</footer>
